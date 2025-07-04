@@ -1,5 +1,4 @@
-import 'dart:convert';
-import 'package:chennai_demo/home/modal/home_modal.dart';
+import 'package:chennai_demo/utils/utils.dart';
 import 'package:http/http.dart' as http;
 
 class HomeRepository {

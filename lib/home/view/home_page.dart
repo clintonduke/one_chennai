@@ -1,9 +1,4 @@
-import 'package:chennai_demo/home/controller/home_bloc/home_bloc.dart';
-import 'package:chennai_demo/home/controller/home_bloc/home_event.dart';
-import 'package:chennai_demo/home/controller/home_bloc/home_state.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'home_tile.dart';
+import 'package:chennai_demo/utils/utils.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -30,7 +25,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Home List")),
+      appBar: AppBar(title: const Text("Home List"), centerTitle: true),
       body: BlocBuilder<HomeBloc, HomeState>(
         builder: (context, state) {
           if (state is HomeLoading &&

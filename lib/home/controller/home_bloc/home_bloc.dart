@@ -1,8 +1,4 @@
-import 'package:chennai_demo/home/controller/home_bloc/home_event.dart';
-import 'package:chennai_demo/home/controller/home_bloc/home_state.dart';
-import 'package:chennai_demo/home/modal/home_modal.dart';
-import 'package:chennai_demo/home/service/home_service.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:chennai_demo/utils/utils.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final HomeRepository homeRepository;
